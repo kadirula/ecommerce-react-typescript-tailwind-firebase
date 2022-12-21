@@ -1,8 +1,14 @@
+import { RouterProvider } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import { router } from './route/router';
 const App = () => {
   return (
-    <div className="font-extrabold">
-      E-Commerce
-    </div>
+    <>
+      <Header />
+      <RouterProvider router={router} />
+      <Footer />
+    </>
   );
 }
 
