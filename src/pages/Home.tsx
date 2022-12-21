@@ -1,8 +1,12 @@
 import React from 'react'
+// import ShoppingCart from '../components/shopping-cart'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='container mx-auto py-3'>
+      Home
+      {/* <ShoppingCart /> */}
+    </div>
   )
 }
 

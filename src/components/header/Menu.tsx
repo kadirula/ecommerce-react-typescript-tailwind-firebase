@@ -26,8 +26,7 @@ const Menu = () => {
     ];
 
     return (
-        <div className='flex items-center justify-center gap-8'>
-
+        <div className='items-center justify-center gap-8 hidden sm:flex'>
             {
                 menus.map((menu, index) => (
                     <a href={menu.path} className='font-semibold uppercase text-lg relative group hover:text-orange-500 tracking-widest transition-all duration-500' key={index}>
