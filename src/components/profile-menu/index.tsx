@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import { deepOrange } from '@mui/material/colors';
 
-const ProfileMenu = () => {
+const ProfileMenu: React.FunctionComponent = () => {
 
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
@@ -22,7 +22,7 @@ const ProfileMenu = () => {
             <IconButton
                 onClick={handleClick}
                 size="small"
-                sx={{ ml: 2, pb: 0 }}
+                sx={{ pb: 0 }}
                 aria-controls={open ? 'account-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}

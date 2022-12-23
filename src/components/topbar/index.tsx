@@ -1,4 +1,4 @@
-const Topbar = () => {
+const Topbar: React.FunctionComponent = () => {
 
 
     return (

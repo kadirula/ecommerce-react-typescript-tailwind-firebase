@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import IconButton from '@mui/material/IconButton';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import React, { useState, useRef } from 'react'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Badge from '@mui/material/Badge';
 import ProductImage from '../../assets/product-cart.png';
 
@@ -28,7 +27,7 @@ const shoppingCartItems = [
     }
 ]
 
-const ShoppingCartMenu = () => {
+const ShoppingCartMenu: React.FunctionComponent = () => {
 
     const [isShoppingCart, setIsShoppingCart] = useState<boolean>(false);
     const shoppingRef = useRef<HTMLDivElement>(null);
@@ -47,10 +46,10 @@ const ShoppingCartMenu = () => {
     return (
         <div className='relative' id='shopping-menu' ref={shoppingRef}>
             <Badge badgeContent={4} sx={{ cursor: 'pointer' }} color="warning" onClick={() => setIsShoppingCart(!isShoppingCart)}>
-                <ShoppingBasketIcon fontSize='medium' />
+                <ShoppingCartOutlinedIcon fontSize='medium' />
             </Badge>
             <div
-                className={`absolute right-0 w-max min-w-80 shadow-lg bg-slate-100 transition-all duration-500 z-50 ${isShoppingCart ? 'top-full visible h-max' : 'top-0 invisible h-0 opacity-0'} `}
+                className={`absolute -right-5 min-w-full sm:min-w-80 sm:right-0 shadow-lg bg-slate-100 transition-all duration-500 z-50 ${isShoppingCart ? 'top-full visible h-max' : 'top-0 invisible h-0 opacity-0'} `}
             >
                 <div className='px-4 py-6'>
                     {

@@ -7,11 +7,11 @@ module.exports = {
     extend: {
       minWidth:{
         80: '20rem'
-      }
+      },
     },
     fontFamily: {
       'righteous' : ['Righteous']
-    }
+    },
   },
   plugins: [],
 }
