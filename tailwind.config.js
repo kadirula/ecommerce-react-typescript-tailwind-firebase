@@ -5,12 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      minWidth:{
+      minWidth: {
         80: '20rem'
       },
+      rotate: {
+        '360': '360deg'
+      }
     },
     fontFamily: {
-      'righteous' : ['Righteous']
+      'righteous': ['Righteous']
     },
   },
   plugins: [],

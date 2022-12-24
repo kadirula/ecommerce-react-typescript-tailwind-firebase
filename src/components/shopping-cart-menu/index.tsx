@@ -6,21 +6,25 @@ import ProductImage from '../../assets/product-cart.png';
 
 const shoppingCartItems = [
     {
+        id: 1,
         productName: 'Product Name - 1',
         price: '299.90',
         image: ProductImage
     },
     {
+        id: 2,
         productName: 'Product Name - 2',
         price: '499.90',
         image: ProductImage
     },
     {
+        id: 3,
         productName: 'Product Name - 3',
         price: '399.90',
         image: ProductImage
     },
     {
+        id: 4,
         productName: 'Product Name - 4',
         price: '199.90',
         image: ProductImage
@@ -54,7 +58,7 @@ const ShoppingCartMenu: React.FunctionComponent = () => {
                 <div className='px-4 py-6'>
                     {
                         shoppingCartItems.map((item, index) => (
-                            <div className={`flex items-center justify-between gap-4 py-3 ${(index + 1) != shoppingCartItems.length ? 'border-b border-gray-300' : ''}`} key={index}>
+                            <div className={`flex items-center justify-between gap-4 py-3 ${(index + 1) != shoppingCartItems.length ? 'border-b border-gray-300' : ''}`} key={item.id}>
                                 <div className='border border-gray-300 rounded-lg w-20 h-20 p-2'>
                                     <img src={item.image} />
                                 </div>

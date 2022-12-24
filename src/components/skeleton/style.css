@@ -1,0 +1,10 @@
+/* Product Skeleton */
+.skeleton {
+    animation: skeleton 1s ease infinite alternate;
+}
+
+@keyframes skeleton {
+    to {
+        opacity: 0.5;
+    }
+}

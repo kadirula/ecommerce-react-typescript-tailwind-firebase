@@ -5,22 +5,27 @@ const SiteMenu: React.FunctionComponent = () => {
 
     const menus = [
         {
+            id: 1,
             text: "Home",
             path: "/"
         },
         {
+            id: 2,
             text: "Women's",
             path: "/women"
         },
         {
+            id: 3,
             text: "Man's",
             path: "/man"
         },
         {
+            id: 4,
             text: "Child's",
             path: "/child"
         },
         {
+            id: 5,
             text: "Shop",
             path: "/shop"
         }
