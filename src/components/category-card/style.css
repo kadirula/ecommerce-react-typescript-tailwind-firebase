@@ -1,0 +1,9 @@
+.category-item:nth-child(3n + 1){
+    background-color: rgb(250, 227, 217);
+}
+.category-item:nth-child(3n + 2){
+    background-color: rgb(214, 211, 240);
+}
+.category-item:nth-child(3n + 3){
+    background-color: rgb(190, 226, 214);
+}

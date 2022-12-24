@@ -17,6 +17,9 @@ export const getAllProducts = async (limit = 15) => {
 }
 
 export const getAllProductsByCategory = async (category: string, limit = 15) => {
-    const res = await fetchFromUrl(`products/category/${category}?limit=${limit}`)
-    return res;
+    return await fetchFromUrl(`products/category/${category}?limit=${limit}`)
+}
+
+export const getAllCategories = async () => {
+    return await fetchFromUrl(`products/categories`);
 }
