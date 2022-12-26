@@ -35,14 +35,15 @@ const ProductContainer: React.FunctionComponent<IProductContainerProps> = ({ typ
     return (
         <div className='container mx-auto py-4 px-4 lg:px-0 lg:py-10'>
             <Title title={type} />
+            
             <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 py-5">
                 {
-                    loading ?
-                        <ProductSkeleton productCount={products.length} />
-                        :
-                        products.sort((a, b) => b.rating - a.rating)?.map((product) => (
+                    products.sort((a, b) => b.rating - a.rating)?.map((product) => (
+                        loading ?
+                            <ProductSkeleton key={product.id}/>
+                            :
                             <ProductCard product={product} key={product.id} />
-                        ))
+                    ))
 
                 }
             </div>

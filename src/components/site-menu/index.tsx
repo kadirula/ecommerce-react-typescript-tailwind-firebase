@@ -16,18 +16,13 @@ const SiteMenu: React.FunctionComponent = () => {
         },
         {
             id: 3,
-            text: "Man's",
+            text: "Men's",
             path: "/man"
         },
         {
             id: 4,
             text: "Child's",
             path: "/child"
-        },
-        {
-            id: 5,
-            text: "Shop",
-            path: "/shop"
         }
     ];
 

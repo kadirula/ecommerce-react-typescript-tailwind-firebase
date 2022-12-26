@@ -20,7 +20,7 @@ const CategoryBanner: React.FunctionComponent = () => {
       {
         categories.map((category) => (
           loading ?
-            <CategoryBannerSkeleton category={category} />
+            <CategoryBannerSkeleton category={category} key={category.id} />
             :
             <div
               className={`w-full h-64 ${category.size === 'lg' ? 'lg:h-full lg:row-span-2 lg:col-span-3' : 'lg:col-span-2'} relative overflow-hidden flex items-center justify-start`}

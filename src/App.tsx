@@ -11,8 +11,8 @@ const App = () => {
       <div className='min-h-screen'>
         <Routes>
           {
-            router.map(route => (
-              <Route path={route.path} element={route.element} />
+            router.map((route, index) => (
+              <Route path={route.path} element={route.element} key={index} />
             ))
           }
         </Routes>
